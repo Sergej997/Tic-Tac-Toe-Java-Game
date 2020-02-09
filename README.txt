@@ -1,0 +1,1 @@
+This is tic tac toe game, made using java IDE called netbeans. It is window application. User starts application by running frmTicTacToe.java located in ui.view.
