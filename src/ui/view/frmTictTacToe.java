@@ -36,7 +36,7 @@ public class frmTictTacToe extends javax.swing.JFrame {
         jButton4.setBackground(Color.WHITE);
         jButton5.setBackground(Color.BLUE);
         jButton6.setBackground(Color.PINK);
-        jButton7.setBackground(Color.GREEN);
+        jButton7.setBackground(Color.black);
         jButton8.setBackground(Color.darkGray);
         jButton9.setBackground(Color.cyan);
     }
@@ -285,105 +285,121 @@ public class frmTictTacToe extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtnExitActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        jButton1.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton1.setForeground(Color.GREEN);
-        } else {
-            jButton1.setForeground(Color.BLUE);
+        if (jButton1.getText().equals("")) {
+            jButton1.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton1.setForeground(Color.GREEN);
+            } else {
+                jButton1.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerFirstRow();
+            gameWinnerFirstColumn();
+            gameWinnerDiagonalLeft();
         }
-        choosePlayer();
-        gameWinnerFirstRow();
-        gameWinnerFirstColumn();
-        gameWinnerDiagonalLeft();
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jButton2.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton2.setForeground(Color.GREEN);
-        } else {
-            jButton2.setForeground(Color.BLUE);
+        if (jButton2.getText().equals("")) {
+            jButton2.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton2.setForeground(Color.GREEN);
+            } else {
+                jButton2.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerFirstRow();
+            gameWinnerSecondColumn();
         }
-        choosePlayer();
-        gameWinnerFirstRow();
-        gameWinnerSecondColumn();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        jButton3.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton3.setForeground(Color.GREEN);
-        } else {
-            jButton3.setForeground(Color.BLUE);
+        if (jButton3.getText().equals("")) {
+            jButton3.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton3.setForeground(Color.GREEN);
+            } else {
+                jButton3.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerFirstRow();
+            gameWinnerThirdColumn();
+            gameWinnerDiagonalRight();
         }
-        choosePlayer();
-        gameWinnerFirstRow();
-        gameWinnerThirdColumn();
-        gameWinnerDiagonalRight();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        jButton4.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton4.setForeground(Color.GREEN);
-        } else {
-            jButton4.setForeground(Color.BLUE);
+        if (jButton4.getText().equals("")) {
+            jButton4.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton4.setForeground(Color.GREEN);
+            } else {
+                jButton4.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerSecondRow();
+            gameWinnerFirstColumn();
         }
-        choosePlayer();
-        gameWinnerSecondRow();
-        gameWinnerFirstColumn();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        jButton5.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton5.setForeground(Color.GREEN);
-        } else {
-            jButton5.setForeground(Color.BLUE);
+        if (jButton5.getText().equals("")) {
+            jButton5.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton5.setForeground(Color.GREEN);
+            } else {
+                jButton5.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerSecondRow();
+            gameWinnerSecondColumn();
+            gameWinnerDiagonalLeft();
+            gameWinnerDiagonalRight();
         }
-        choosePlayer();
-        gameWinnerSecondRow();
-        gameWinnerSecondColumn();
-        gameWinnerDiagonalLeft();
-        gameWinnerDiagonalRight();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        jButton6.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton6.setForeground(Color.GREEN);
-        } else {
-            jButton6.setForeground(Color.BLUE);
+        if (jButton6.getText().equals("")) {
+            jButton6.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton6.setForeground(Color.GREEN);
+            } else {
+                jButton6.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerSecondRow();
+            gameWinnerThirdColumn();
         }
-        choosePlayer();
-        gameWinnerSecondRow();
-        gameWinnerThirdColumn();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        jButton7.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton7.setForeground(Color.GREEN);
-        } else {
-            jButton7.setForeground(Color.BLUE);
+        if (jButton7.getText().equals("")) {
+            jButton7.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton7.setForeground(Color.GREEN);
+            } else {
+                jButton7.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerThirdRow();
+            gameWinnerFirstColumn();
+            gameWinnerDiagonalRight();
         }
-        choosePlayer();
-        gameWinnerThirdRow();
-        gameWinnerFirstColumn();
-        gameWinnerDiagonalRight();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        jButton8.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton8.setForeground(Color.GREEN);
-        } else {
-            jButton8.setForeground(Color.BLUE);
+        if (jButton8.getText().equals("")) {
+            jButton8.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton8.setForeground(Color.GREEN);
+            } else {
+                jButton8.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerThirdRow();
+            gameWinnerSecondColumn();
         }
-        choosePlayer();
-        gameWinnerThirdRow();
-        gameWinnerSecondColumn();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
@@ -392,16 +408,18 @@ public class frmTictTacToe extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtnResetActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        jButton9.setText(startGame);
-        if (startGame.equalsIgnoreCase("X")) {
-            jButton9.setForeground(Color.GREEN);
-        } else {
-            jButton9.setForeground(Color.BLUE);
+        if (jButton9.getText().equals("")) {
+            jButton9.setText(startGame);
+            if (startGame.equalsIgnoreCase("X")) {
+                jButton9.setForeground(Color.GREEN);
+            } else {
+                jButton9.setForeground(Color.BLUE);
+            }
+            choosePlayer();
+            gameWinnerThirdRow();
+            gameWinnerThirdColumn();
+            gameWinnerDiagonalLeft();
         }
-        choosePlayer();
-        gameWinnerThirdRow();
-        gameWinnerThirdColumn();
-        gameWinnerDiagonalLeft();
     }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
